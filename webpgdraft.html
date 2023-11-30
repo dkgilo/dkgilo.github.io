@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@dannielcgi</title>
+        <style>
+            body {
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(246,246,246);
+            }
+            .center-column {      
+                width: 535px;
+                height: 98vh;
+                background-color: rgb(246,246,246); 
+                box-shadow: 0px 0px 20px rgba(0,0,0,0.18);
+                border-radius: 9px;
+            }
+            /* first section (avatar img, name, description)*/
+            .info-panel {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: justify;
+            }
+            .avatar-box {
+                width: 110px;
+                height: 110px; 
+                background-color: lavender;
+                border-radius: 50%;
+                margin-top: 35px;
+                margin-bottom: 11px;
+               
+            }
+            .description {
+                margin-top:26px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .inter-bold {
+                font-family: Inter, sans-serif;
+                font-style: normal;
+                font-weight:600;
+                font-size: 15px;
+                color: rgb(51,51,51)
+
+            }
+            .inter-norm {
+                font-family: Inter, sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13.8px;
+                color: rgb(51,51,51);
+            }
+            /* second section (navigation part - about me and skills*/
+            .navi-panel {
+                display: flex;
+                flex-wrap:inherit;
+                justify-content: center;
+                margin-top: 20px;
+                margin-bottom:40px;
+            }
+            .aboutme-format {
+                cursor: pointer;
+                width: 150px;
+                height: 4.5vh;
+                background-color: grey;
+                margin-right: 30px;
+                margin-left: 60px;
+                border-radius: 4px;
+                box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .aboutme-format a {
+                text-decoration: none;
+                color: white;
+            }
+            .myskills-format {
+                cursor: pointer;
+                width: 150px;
+                background-color: grey;
+                margin-right: 60px;
+                margin-left: 30px;
+                border-radius: 4px;
+                box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .myskills-format a{
+                text-decoration: none;
+                color: white;
+            }
+            .navi-panel a {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center; 
+            }
+            /* third section (social links - instagram and linkedin) */
+            .content-header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .social-links {
+                width: 465px;
+                height: 140px;
+                background-color: rgb(246,246,246); 
+                box-shadow: 0px 0px 20px rgba(0,0,0,0.18);
+                border-radius: 6.5px;
+                margin-left:35px;
+                display: flex;
+                flex-direction: row;
+                text-decoration: none;
+            }
+            /* Instagram styling */
+            .insta-avatar {
+                width: 140px;
+                height: 140px;
+                background-position: left;
+                border-radius: 6.5px;
+                
+                justify-content: left;
+                align-items: left;
+                text-align: left;
+                overflow: hidden;
+            }
+            .insta-text {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                justify-content: center;
+                align-items: left;
+                margin-left: 40px;
+            }
+            /* LinkedIn styling */
+
+
+        </style>
+    </head> 
+    <!--body-part below: note inserted for border-->
+    <body>
+        <div class="center-column"> <!--gray column that contains all informations-->
+            
+            <!--first section with three (3) elements/contents-->
+            <header class="info-panel"> 
+                <!--image box-->
+                <div><img class="avatar-box" src="img/dkavatar.JPG"></div> 
+                <!--username-->
+                <div><span class="inter-bold">Kalli</span></div> 
+                <!--user description-->
+                <div class="description"> 
+                    <span class="description inter-norm">Computer Engineer - Web Dev. I am a graduating student at Pamantasan ng Lungsod ng Maynila who is currently studying Data Analytics and Web Development as my field of specialization. It has been a passion of mine to collect, organize, and visualize data to formulate information essential for business decision making. Through Web Development, it would enable me to better visualize and document these data publicly.</span>
+                </div>
+            </header>
+            
+            <!--navigation part-->
+            <nav class="navi-panel inter-norm">
+                <div class="aboutme-format">
+                    <a class="about-me" href="aboutme.html">ABOUT ME</a>
+                </div>
+
+                <div class="myskills-format">
+                    <a class="my-skills" href="skills.html">SKILLS</a>
+                </div> 
+            </nav>
+        
+            <!--social link part-->
+            <div class="content-header" style="margin-bottom: 17px;">
+                <span class="inter-bold" style="font-size: 18px;">Social Links</span>
+            </div>
+            <!--instagram box-->
+            <div>
+                <a href="https://www.instagram.com/dannielcgi/" class="social-links">
+                    <div><img class="insta-avatar" src="img/dkcg.jpg" alt="Open Instagram"></div>
+                    <div class="insta-text inter-bold">DG Kalli / @dannielcgi
+                        <div>
+                            <span class="inter-norm">Instagram account.</span> 
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--linkedin box-->
+            <div>
+                <a href="https://www.linkedin.com/in/dannielkgilo/" class="social-links" style="margin-top: 23px;">
+                    <div><img class="insta-avatar" src="img/formal.jpg" alt="Open LinkedIn"></div>
+                    <div class="insta-text inter-bold">Danniel Gilo / @dannielkgilo
+                        <div>
+                            <span class="inter-norm">LinkedIn account.</span> 
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--footer part-->
+            <div style="text-align: center; margin-top: 95px;">Web Page made by Danniel Kalli Gilo.</div>
+            <div style="text-align: center;">All Rights Reserved.</div>
+
+        </div>        
+
+    </body>
+</html>
